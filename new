@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+
+.fakeimg {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="index.php">Home</a>
+    <a href="homework.php">Homework 2</a>
+    <a class="active" href="news.php">News</a>
+    <a href="gallery.php">Gallery</a>
+  </div>
+
+<div class="header">
+  <h2>News</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>About CSS</h2>
+      <h5>Initial release: 17 December 1996;</h5>
+      <div class="fakeimg" ><img style="min-height:250px; max-width:250px" src="css.png" alt="picture"></div>
+      <p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p>
+    </div>
+
+    <div class="card">
+      <h2>About HTML</h2>
+      <h5>Initial release: 1993;</h5>
+      <div class="fakeimg"><img style="min-height:250px; max-width:250px" src="html.jpg" alt="picture"></div>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
